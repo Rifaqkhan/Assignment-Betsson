@@ -1,0 +1,1338 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\PC\\Desktop\\Test_Home\\playwright.config.js",
+    "rootDir": "C:/Users/PC/Desktop/Test_Home",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/Test_Home/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Chrome",
+        "name": "Chrome",
+        "testDir": "C:/Users/PC/Desktop/Test_Home",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/Test_Home/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Firefox",
+        "name": "Firefox",
+        "testDir": "C:/Users/PC/Desktop/Test_Home",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/PC/Desktop/Test_Home/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "WebKit",
+        "name": "WebKit",
+        "testDir": "C:/Users/PC/Desktop/Test_Home",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.js"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\login.spec.js",
+      "file": "tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Functionality",
+          "file": "tests/login.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 828,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:02.833Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 2176,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:02.907Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 723,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:02.949Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-f999e-ogin-with-valid-credentials-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-a44dc5ad20db5b0da46d",
+              "file": "tests/login.spec.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should show error for locked out user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 981,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:06.111Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 1377,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:09.155Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 1001,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:06.218Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-76f30-w-error-for-locked-out-user-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-2c884769345b8a84d89a",
+              "file": "tests/login.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "should show error for invalid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 436,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:09.241Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1315,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:13.307Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 656,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                          "column": 17,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                            "column": 17,
+                            "line": 10
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js:10:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:09.266Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-login-Login-Function-fffef-ror-for-invalid-credentials-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\login.spec.js",
+                        "column": 17,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1b71af24692d2ed6cb3f-5e6d4716a1f752d49a55",
+              "file": "tests/login.spec.js",
+              "line": 28,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\shopping-cart.spec.js",
+      "file": "tests/shopping-cart.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Shopping Cart Functionality",
+          "file": "tests/shopping-cart.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add item to cart and update cart count",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 673,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:02.919Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 2727,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:03.048Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 696,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:02.963Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-3c1c8--cart-and-update-cart-count-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9a35ead54307092ceb03-dc2e2dee0dd9175284d5",
+              "file": "tests/shopping-cart.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "should add multiple items to cart and verify in cart page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 633,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:06.203Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1340,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:10.302Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 976,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:06.184Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-6ad90-art-and-verify-in-cart-page-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9a35ead54307092ceb03-3dc5889943e2a6d19644",
+              "file": "tests/shopping-cart.spec.js",
+              "line": 33,
+              "column": 3
+            },
+            {
+              "title": "should complete checkout process successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chrome",
+                  "projectName": "Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 453,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:09.152Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Firefox",
+                  "projectName": "Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1286,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:14.084Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-Firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "WebKit",
+                  "projectName": "WebKit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 656,
+                      "error": {
+                        "message": "TypeError: LoginPage is not a constructor",
+                        "stack": "TypeError: LoginPage is not a constructor\n    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                          "column": 17,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                            "column": 17,
+                            "line": 14
+                          },
+                          "message": "TypeError: LoginPage is not a constructor\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     inventoryPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInventoryPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     cartPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mCartPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js:14:17\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-05-06T14:27:09.225Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-WebKit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-WebKit\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\Test_Home\\test-results\\tests-shopping-cart-Shoppi-cb043-eckout-process-successfully-WebKit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\Test_Home\\tests\\shopping-cart.spec.js",
+                        "column": 17,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9a35ead54307092ceb03-1f24d48be0269d8060fa",
+              "file": "tests/shopping-cart.spec.js",
+              "line": 45,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-05-06T14:27:01.124Z",
+    "duration": 15467.168,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 18,
+    "flaky": 0
+  }
+}
